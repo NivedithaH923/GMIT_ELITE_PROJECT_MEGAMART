@@ -1,0 +1,105 @@
+/* App-wide global styling */
+
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f9fa; /* Light background */
+  color: #333; /* Default text color */
+}
+
+/* General container styling */
+.app {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Header styling */
+h1, h2 {
+  color: #343a40;
+}
+
+/* Button styling */
+button {
+  padding: 8px 12px;
+  background-color: #007bff; /* Primary button color */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3; /* Darker shade on hover */
+}
+
+/* Input fields */
+input {
+  padding: 8px;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  margin-right: 10px;
+  font-size: 14px;
+  width: 100%;
+  max-width: 300px;
+  box-sizing: border-box;
+}
+
+input:focus {
+  border-color: #80bdff;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.25);
+}
+
+/* Links (for navigation) */
+a {
+  text-decoration: none;
+  color: #007bff;
+}
+
+a:hover {
+  color: #0056b3;
+}
+
+/* Dashboard Links Layout */
+.dashboard-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.dashboard-links a {
+  display: block;
+  padding: 10px 20px;
+  background-color: #28a745; /* Green button for dashboard links */
+  color: white;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.dashboard-links a:hover {
+  background-color: #218838; /* Darker green on hover */
+}
+
+/* Lists (for displaying data like sellers, products, etc.) */
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+ul li {
+  padding: 10px;
+  margin-bottom: 5px;
+  background-color: #f1f1f1;
+  border-radius: 4px;
+}
+
+ul li:hover {
+  background-color: #e9ecef;
+}

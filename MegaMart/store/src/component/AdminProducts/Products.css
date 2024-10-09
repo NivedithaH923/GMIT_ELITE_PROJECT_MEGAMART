@@ -1,0 +1,133 @@
+
+/* Input Fields */
+.products-page input {
+  padding: 10px;
+  border: 2px solid #ffc107; /* Yellow border */
+  border-radius: 5px; /* Rounded corners */
+  width: 100%; /* Full width to occupy available space */
+  max-width: 250px; /* Limit width to 250px */
+  transition: border-color 0.3s ease; /* Smooth transition for border color */
+}
+
+/* Focus Style for Input Fields */
+.products-page input:focus {
+  border-color: #e0a800; /* Darker yellow on focus */
+  outline: none; /* Remove outline */
+  box-shadow: 0 0 5px rgba(224, 168, 0, 0.5); /* Glow effect */
+}
+
+/* Products Page Styling */
+.products-page {
+  padding: 20px;
+  background-color: #f8f9fa; /* Light background for contrast */
+  min-height: 100vh; /* Full page height */
+  display: flex;
+  flex-direction:column;
+  align-items: center; /* Center content horizontally */
+}
+
+/* Enhanced Heading Styling */
+.products-page h1 {
+  font-size: 3rem; /* Large font size */
+  color: #007bff; /* Eye-catching color */
+  margin-bottom: 20px; /* Space below the heading */
+  text-align: center;
+  text-transform: uppercase; /* Make all letters uppercase */
+  letter-spacing: 2px; /* Add some space between letters */
+  font-weight: bold; /* Make the text bold */
+  background: linear-gradient(90deg, #ffa600, #ffbb00); /* Add a gradient */
+  -webkit-background-clip: text; /* Clip background to text */
+  background-clip: text;
+  color: transparent; /* Make the text transparent to show the gradient */
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
+  animation: pulse 2s infinite; /* Animation for subtle pulsing effect */
+}
+
+/* Pulsing Animation */
+@keyframes pulse {
+  0% {
+      transform: scale(1);
+  }
+  50% {
+      transform: scale(1.05);
+  }
+  100% {
+      transform: scale(1);
+  }
+}
+
+/* Input Fields */
+.products-page input {
+  margin-bottom: 15px; /* Space between input fields */
+  padding: 10px;
+  
+  border: 2px solid #ffc107; /* Yellow border */
+  border-radius: 5px; /* Rounded corners */
+  width: 250px; /* Fixed width for input fields */
+  transition: border-color 0.3s ease; /* Smooth transition for border color */
+}
+
+/* Focus Style for Input Fields */
+.products-page input:focus {
+  border-color: #e0a800; /* Darker yellow on focus */
+  outline: none; /* Remove outline */
+}
+
+
+/* Button Styling */
+.products-page button {
+  background-color: #ffc107;
+  color: black;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.products-page button:hover {
+  background-color: #e0a800;
+  transform: scale(1.05);
+}
+
+/* Products List */
+.products-page ul {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 20px;
+  width: 100%;
+  max-width: 600px;
+}
+
+.products-page li {
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: transform 0.2s ease;
+}
+
+.products-page li:hover {
+  transform: translateY(-2px);
+}
+
+/* Buttons within List Items */
+.products-page li button {
+  margin-left: 10px;
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.products-page li button:hover {
+  background-color: #c82333;
+}

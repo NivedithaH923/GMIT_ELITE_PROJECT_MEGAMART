@@ -1,0 +1,200 @@
+/* Admin Dashboard Container */
+/* Enhanced Admin Dashboard Heading */
+/* Enhanced Admin Dashboard Heading */
+.admin-dashboard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+
+.admin-dashboard h1 {
+  font-size: 36px;
+  color: #343a40;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  position: relative;
+  padding: 10px 20px;
+  background: linear-gradient(90deg, rgba(0,123,255,0.2), rgba(0,123,255,0.4), rgba(0,123,255,0.2));
+  border-radius: 10px;
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  text-align: center; /* Center text */
+  width: fit-content; /* Make the width only as wide as the text */
+}
+
+/* Add subtle line beneath the heading */
+.admin-dashboard h1::after {
+  content: '';
+  display: block;
+  width: 120px;
+  height: 4px;
+  background-color: #007bff;
+  margin: 15px auto 0; /* Center the underline */
+  border-radius: 2px;
+}
+
+/* Hover effect on the heading */
+.admin-dashboard h1:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 8px 16px rgba(0, 123, 255, 0.4);
+}
+
+/* Responsive heading size */
+@media (max-width: 768px) {
+  .admin-dashboard h1 {
+    font-size: 28px;
+  }
+}
+
+
+/* Dashboard Links - Navigation Section */
+.dashboard-links {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  text-align: center;
+  animation: fadeIn 1s ease forwards;
+}
+
+/* Navigation Link Styles with Animated Hover */
+.dashboard-links a {
+  text-decoration: none;
+  color: #ffffff;
+  background: linear-gradient(135deg, #007bff, #0056b3);
+  padding: 15px 30px;
+  border-radius: 50px;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 123, 255, 0.4);
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+}
+
+/* Add Hover Effect for Movement and Animation */
+.dashboard-links a:hover {
+  background: linear-gradient(135deg, #0056b3, #004085);
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(0, 123, 255, 0.6);
+}
+
+/* Gradient Effect on Hover */
+.dashboard-links a::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 200%;
+  height: 100%;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.05));
+  transition: all 0.4s ease;
+}
+
+.dashboard-links a:hover::before {
+  left: 100%;
+}
+
+/* Active Link Styling */
+.dashboard-links a.active {
+  background-color: #28a745;
+  box-shadow: 0 8px 20px rgba(40, 167, 69, 0.5);
+}
+
+/* Dashboard Button Icons */
+.dashboard-links a::after {
+  content: '→';
+  font-size: 20px;
+  position: absolute;
+  right: 20px;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+.dashboard-links a:hover::after {
+  opacity: 1;
+  right: 15px;
+}
+
+/* Animating Links on Page Load */
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(10px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .dashboard-links {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .dashboard-links a {
+    flex: 1;
+    text-align: center;
+    padding: 12px;
+    margin: 5px;
+  }
+}
+
+/* Customer and Order Tables */
+.table-container {
+  margin-top: 30px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table th, table td {
+  padding: 12px 20px;
+  border: 1px solid #e9ecef;
+  text-align: left;
+}
+
+table th {
+  background-color: #007bff;
+  color: #fff;
+}
+
+table tr:nth-child(even) {
+  background-color: #f8f9fa;
+}
+
+table tr:hover {
+  background-color: rgba(0, 123, 255, 0.1);
+}
+
+/* Scrollable Tables */
+.table-container {
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+/* Buttons Inside Table for Actions */
+.table-container .action-btn {
+  background-color: #007bff;
+  color: #fff;
+  padding: 8px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.table-container .action-btn:hover {
+  background-color: #0056b3;
+}

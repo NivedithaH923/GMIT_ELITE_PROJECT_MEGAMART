@@ -1,0 +1,93 @@
+/* Categories Page Styling */
+.categories-page {
+  padding: 20px;
+  background-color: #f8f9fa; /* Light background for contrast */
+  min-height: 100vh; /* Occupies full page height */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center content horizontally */
+}
+
+/* Heading */
+.categories-page h1 {
+  font-size: 3rem; /* Large font size */
+  color: #007bff; /* Eye-catching color */
+  margin-bottom: 20px; /* Space below the heading */
+  text-align: center;
+  text-transform: uppercase; /* Make all letters uppercase */
+  letter-spacing: 2px; /* Add some space between letters */
+  font-weight: bold; /* Make the text bold */
+  background: linear-gradient(90deg, #17a2b8, #00fff7); /* Add a gradient */
+  -webkit-background-clip: text; /* Clip background to text */
+  background-clip: text;
+  color: transparent; /* Make the text transparent to show the gradient */
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
+  animation: pulse 2s infinite; /* Animation for subtle pulsing effect */
+}
+
+/* Pulsing Animation */
+@keyframes pulse {
+  0% {
+      transform: scale(1);
+  }
+  50% {
+      transform: scale(1.05);
+  }
+  100% {
+      transform: scale(1);
+  }
+}
+
+/* Input Fields */
+.categories-page input {
+  margin-right: 10px;
+  padding: 10px; /* Increased padding for comfort */
+  border: 2px solid #17a2b8; /* Border color matching the button */
+  border-radius: 5px; /* Rounded corners for input */
+  width: 250px; /* Fixed width for uniformity */
+  transition: border-color 0.3s; /* Transition for focus effect */
+}
+
+.categories-page input:focus {
+  border-color: #138496; /* Darker border on focus */
+  outline: none; /* Remove default outline */
+}
+
+/* Button Styling */
+.categories-page button {
+  background-color: #17a2b8; /* Teal background */
+  color: white;
+  border: none;
+  padding: 10px 15px; /* Increased padding for comfort */
+  border-radius: 10px; /* Rounded corners */
+  cursor: pointer;
+  font-size: 1rem; /* Increased font size for better readability */
+  transition: background-color 0.3s, transform 0.2s; /* Transition effects */
+}
+
+.categories-page button:hover {
+  background-color: #138496; /* Darker teal on hover */
+  transform: scale(1.05); /* Slight grow effect */
+}
+
+/* Category List */
+.categories-page ul {
+  list-style-type: none; /* Remove bullet points */
+  padding: 0;
+  margin-top: 20px; /* Space above the list */
+  width: 100%; /* Full width */
+  max-width: 600px; /* Limit the width for better layout */
+}
+
+.categories-page li {
+  background-color: #fff; /* White background for list items */
+  padding: 15px; /* Padding for list items */
+  border-radius: 5px; /* Rounded corners */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+  margin-top: 10px; /* Space between items */
+  transition: transform 0.2s; /* Transition for hover effect */
+}
+
+.categories-page li:hover {
+  transform: translateY(-2px); /* Raise effect on hover */
+}

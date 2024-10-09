@@ -1,0 +1,173 @@
+/* Base body and html setup */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f2f5; /* Light background for contrast */
+}
+
+/* Sellers Page Container */
+.sellers-page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Full viewport height */
+  padding: 40px;
+  background-color: #ffffff; /* White background */
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1); /* Enhanced shadow for depth */
+  box-sizing: border-box;
+  margin: 0; /* Remove margin */
+  border-radius: 10px; /* Rounded corners for the main container */
+}
+
+/* Page Heading */
+.sellers-page h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 20px;
+  font-weight: bold;
+  text-transform: uppercase; /* Uppercase for style */
+  letter-spacing: 1px; /* Spacing between letters */
+}
+
+/* Input Fields with Full Width */
+.sellers-page input {
+  margin-right: 10px;
+  padding: 12px;
+  width: 100%; /* Full width input */
+  max-width: 600px; /* Limit width */
+  border: 1px solid #ced4da;
+  border-radius: 8px;
+  font-size: 16px;
+  box-sizing: border-box;
+  transition: border-color 0.3s;
+  margin-bottom: 20px;
+}
+
+/* Focus Style for Input Fields */
+.sellers-page input:focus {
+  border-color: #28a745;
+  outline: none;
+  box-shadow: 0 0 5px rgba(40, 167, 69, 0.5); /* Glow effect */
+}
+
+/* Button Styling with Full Page */
+.sellers-page button {
+  background-color: #28a745;
+  text-align: center;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  cursor: pointer;
+  border-radius: 8px;
+  font-size: 18px;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  width: 100%; /* Full width button */
+  max-width: 200px; /* Limit width */
+  box-sizing: border-box;
+}
+
+/* Hover Effect for Buttons */
+.sellers-page button:hover {
+  background-color: #218838;
+  text-align: center;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Enhanced shadow */
+}
+
+/* Full Page List with Cards */
+.sellers-page ul {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/* Seller Card Styles */
+.sellers-page li {
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  justify-content: space-between;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 10px;
+  flex: 1 1 calc(30% - 20px); /* Responsive cards with 3 columns */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-sizing: border-box;
+}
+
+/* Card Title */
+.sellers-page li h2 {
+  font-size: 1.5rem;
+  color: #333;
+  margin: 0;
+}
+
+/* Card Description */
+.sellers-page li p {
+  font-size: 0.9rem;
+  color: #666;
+  margin: 10px 0;
+}
+
+/* Hover Effect for List Items */
+.sellers-page li:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Button inside List Items */
+.sellers-page li button {
+  background-color: #dc3545;
+  color: white;
+  padding: 8px 15px;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  margin-top: 10px; /* Margin for separation */
+}
+
+/* Hover Effect for Delete Buttons */
+.sellers-page li button:hover {
+  background-color: #c82333;
+  transform: scale(1.05);
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+  .sellers-page ul {
+    flex-direction: column;
+  }
+
+  .sellers-page li {
+    flex: 1 1 100%;
+  }
+
+  .sellers-page input,
+  .sellers-page button {
+    width: 100%; /* Full width on mobile */
+  }
+}
+
+/* Manage Sellers Heading */
+.manage-sellers-heading {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #fff; /* White text for contrast */
+  background: linear-gradient(90deg, #00ddff, #007bff); /* Gradient background */
+  padding: 20px; /* Spacing around the text */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
+  margin-bottom: 20px; /* Space below the heading */
+  text-transform: uppercase; /* Uppercase letters */
+}
+
+/* Optional: Add a subtle animation on hover */
+.manage-sellers-heading:hover {
+  transform: translateY(-3px);
+  transition: transform 0.3s ease;
+}

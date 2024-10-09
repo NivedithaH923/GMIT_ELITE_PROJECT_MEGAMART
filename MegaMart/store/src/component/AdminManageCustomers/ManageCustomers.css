@@ -1,0 +1,86 @@
+/* Manage Customers Page Styling */
+.manage-customers {
+  padding: 20px;
+  background-color: #f8f9fa; /* Light background for contrast */
+  min-height: 100vh; /* Ensure it occupies full viewport height */
+}
+
+/* Enhanced Heading Styling */
+.manage-customers h1 {
+  font-size: 3rem; /* Large font size */
+  color: #007bff; /* Eye-catching color */
+  margin-bottom: 20px; /* Space below the heading */
+  text-align: center;
+  text-transform: uppercase; /* Make all letters uppercase */
+  letter-spacing: 2px; /* Add some space between letters */
+  font-weight: bold; /* Make the text bold */
+  background: linear-gradient(90deg, #007bff, #00ccff); /* Add a gradient */
+  -webkit-background-clip: text; /* Clip background to text */
+  background-clip: text;
+  color: transparent; /* Make the text transparent to show the gradient */
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
+  animation: pulse 2s infinite; /* Animation for subtle pulsing effect */
+}
+
+/* Pulsing Animation */
+@keyframes pulse {
+  0% {
+      transform: scale(1);
+  }
+  50% {
+      transform: scale(1.05);
+  }
+  100% {
+      transform: scale(1);
+  }
+}
+
+/* Table Styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px; /* Space above the table */
+}
+
+/* Table Header Styling */
+th {
+  background-color: #007bff; /* Blue background for headers */
+  color: white; /* White text color */
+  padding: 12px; /* Padding for header cells */
+  text-align: left; /* Align text to the left */
+  font-size: 1.1rem; /* Slightly larger font for headers */
+}
+
+/* Table Cell Styling */
+td {
+  border: 1px solid #ddd; /* Light border for cells */
+  padding: 10px; /* Padding for table cells */
+  text-align: left; /* Align text to the left */
+  transition: background-color 0.3s ease; /* Smooth background transition */
+}
+
+/* Table Row Hover Effect */
+tr:hover td {
+  background-color: #f1f1f1; /* Light grey on hover */
+}
+
+/* Button Styling for Actions */
+.manage-customers button {
+  background-color: #28a745; /* Green button */
+  color: white; /* White text color */
+  border: none; /* No border */
+  padding: 10px 15px; /* Padding for button */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s ease; /* Smooth background transition */
+  margin-top: 10px; /* Space above the button */
+}
+
+.manage-customers button:hover {
+  background-color: #218838; /* Darker green on hover */
+}
+
+/* Add some margin to the bottom of the table */
+.manage-customers table {
+  margin-bottom: 20px; /* Space below the table */
+}
